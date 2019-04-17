@@ -1,1 +1,146 @@
-Hello World
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Amatic+SC|Quattrocento');
+
+body {
+  font-family: Quattrocento, serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #ffffff;
+}
+a {
+  color: #444444;
+}
+
+div {
+  position: relative;
+  margin: 15px 0 0 0;
+  border-radius: 12px;
+  top: 10px;
+}
+.bio {
+  height: relative;
+}
+.cv {
+  height: relative;
+}
+.contact {
+  height: relative;
+}
+
+h1 {
+  font-family: 'Alegreya', serif;
+  text-align: left;
+  font-size: 35px;
+  color: #444444;
+  margin: 60px 0 60 0;
+  position: relative;
+}
+h2 {
+  text-align: center;
+  color: #555555;
+  margin: 0px 0 40px 0;
+}
+p {
+  color: rgba(100,150,150,1);
+  background: white;
+ 
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: float;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  color: #555555;
+}
+
+.show-description p {
+  height: 260px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+
+
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+    position: relative;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 15px;
+    color: #555555
+    height: relative;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Siwin Lo</h1>
+
+<div class="bio">
+  <p>Bio<br />
+  <small> 
+Siwin Lo is a New York-based, Vancouver-raised writer and PhD candidate in Art History at the City University of New York's Graduate Center. Her writing has appeared in <em> The Brooklyn Rail</em>, <em>e-flux</em>, and <em> Canadian Art Magazine</em>. She holds a BA (2013) and MA (2015) from the University of British Columbia. Her MA thesis problematizes artistic labour in the abstract paintings of Agnes Martin.<br>
+</small></p>
+</div>
+
+<div class="cv">
+  <p>CV<br />
+<small>
+<em>Education</em><br>
+PhD Candidate at CUNY Graduate Center, Art History<br>
+MA and BA in Art History, University of British Columbia <br>
+<br>
+<br>
+<a href="https://www.linkedin.com/in/siwin-lo-63b287a2/">My LinkedIn Profile</a><br>
+<a href="https://www.dropbox.com/s/l6jarl61wepnijx/Lo%20CV%20April%202019.pdf?dl=0">Download my CV!</a>
+</small>
+</div>
+  
+<div class="contact">
+  <p>Contact<br />
+  <small>Thank you for dropping by! <br>
+  Please enter your email here if you would like to subscribe to my mailing list!<br>
+   <input type="email" placeholder="Enter Email" name="email" required>
+   <input type="submit" value=submit>
+
+  </small></p>
+</div>
+
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>

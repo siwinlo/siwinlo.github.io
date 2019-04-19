@@ -1,146 +1,100 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 <head>
-<script src="/assets/jquery.js"></script>
+	<title>Hi! I'm Siwin Lo.</title>
+	<link href="/normalize.css" rel="stylesheet">
 <style>
+	body {
+		font-family: futura, courier;
+		padding: 25px;
+	}
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Amatic+SC|Quattrocento');
+	header {
+    	text-align: left;
+    	background: white;
+      	color: #003333;
+    }
+    a {
+     	color: #dddddd;
+    }
+    h1 {
+      	font-size: 40px;
+      	padding: 0;
+    }
 
-body {
-  font-family: Quattrocento, serif;
-  margin: 0 auto;
-  max-width: 600px;
-  background: #ffffff;
-}
-a {
-  color: #444444;
-}
+    h2 {
+    	font-size: 25px;
+    }
 
-div {
-  position: relative;
-  margin: 15px 0 0 0;
-  border-radius: 12px;
-  top: 10px;
-}
-.bio {
-  height: relative;
-}
-.cv {
-  height: relative;
-}
-.contact {
-  height: relative;
-}
+    img {
+      	margin: 25px 25px;
+      	border: 2px solid black;
+      	border-radius: 35px;
+    }
 
-h1 {
-  font-family: 'Alegreya', serif;
-  text-align: left;
-  font-size: 35px;
-  color: #444444;
-  margin: 60px 0 60 0;
-  position: relative;
-}
-h2 {
-  text-align: center;
-  color: #555555;
-  margin: 0px 0 40px 0;
-}
-p {
-  color: rgba(100,150,150,1);
-  background: white;
- 
-  padding: 10px;
-  line-height: 28px;
-  text-align: justify;
-  position: float;
-  height: 30px;
-  transition: height .5s;
-  -webkit-transition: height .5s;
-  -moz-transition: height .5s;
-}
+    p {
+    	padding: 0px;
+    	font-size: 16px;
+    	line-height: 20px;
+    }
 
-small {
-  opacity: 0;
-  color: #555555;
-}
+    button {
+    	font-size: 18px;
+    	font-family: futura;
+    	background-color: white;
+    	border: 2px solid black;
+    	border-radius: 35px;
+    	padding: 15px;
+    	color: black;
+    }
 
-.show-description p {
-  height: 260px;
-}
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+      }
 
-.show-description small {
-  opacity: 1;
-}
-
-
-
-
-@media (max-width: 500px) {
-  h1 {
-    font-size: 35px;
-    margin-top: 20px;
-    line-height: 40px;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 20px 0 30px 0;
-  }
-  div {
-    margin: 20px 12px 0 12px;
-    position: relative;
-  }
-  p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  small {
-    font-size: 15px;
-    color: #555555
-    height: relative;
-  }
-}
+      body {
+   		img width: 250px;
+        font-size: 16px;
+      }
+    }
 
 </style>
-
 </head>
-
 <body>
-<h1>Siwin Lo</h1>
+	<header>
+		<h1>Hi! I'm <em> Siwin.</em></h1>
+		<p id="about">I'm an art historian and aspiring software engineer!</p><br>
+	</header>
 
-<div class="bio">
-  <p>Bio<br />
-  <small> 
-Siwin Lo is a New York-based, Vancouver-raised writer and PhD candidate in Art History at the City University of New York's Graduate Center. Her writing has appeared in <em> The Brooklyn Rail</em>, <em>e-flux</em>, and <em> Canadian Art Magazine</em>. She holds a BA (2013) and MA (2015) from the University of British Columbia. Her MA thesis problematizes artistic labour in the abstract paintings of Agnes Martin.<br>
-</small></p>
-</div>
+<button type="button" onclick="document.getElementById('me').style.display='block'">Learn more about me</button>
 
-<div class="cv">
-  <p>CV<br />
-<small>
-<em>Education</em><br>
-PhD Candidate at CUNY Graduate Center, Art History<br>
-MA and BA in Art History, University of British Columbia <br>
+<div id="me" style="display:none">
+	<img src="profile.png" img width = 200px><br>
+	<h2> About Me </h2>
+I am an art historian studying the intersection between painting and new media. Recently, I have been learning some basic coding skills because I want to build websites and other digital tools that people can use. In my spare time, I like to go rockclimbing.<br>
 <br>
+
+<div id="contact" style="display:none">
+<h2>Say hi!</h2>
+  <input type="email" placeholder="Your email">
+  <input type="submit">
+  <br>
+ <p> I can also be reached at siwin.lo@gmail.com, or at 646.250.5101. </p><br>
+</div>
+
+<button type="button" onclick="document.getElementById('contact').style.display='block'">Contact me</button>
+<button type="button" onclick="document.getElementById('rockclimbing').style.display='block'">Woah I want to see a rockclimbing pic!</button> 
+<button type="button" onclick="document.getElementById('me', 'contact', 'rockclimbing').style.display='none'">See less</button> 
+
+<div id="rockclimbing" style="display:none">
+<img src="redrocks.jpg" img width = 400px><br>
+<p>This is a picture of me climbing in Red Rocks Canyon, Nevada!</p>
+
 <br>
-<a href="https://www.linkedin.com/in/siwin-lo-63b287a2/">My LinkedIn Profile</a><br>
-<a href="https://www.dropbox.com/s/l6jarl61wepnijx/Lo%20CV%20April%202019.pdf?dl=0">Download my CV!</a>
-</small>
-</div>
-  
-<div class="contact">
-  <p>Contact<br />
-  <small>Thank you for dropping by! <br>
-  Please enter your email here if you would like to subscribe to my mailing list!<br>
-   <input type="email" placeholder="Enter Email" name="email" required>
-   <input type="submit" value=submit>
+<button type="button" onclick="document.getElementById('rockclimbing').style.display='none'">Okay enough rocks!</button> 
+	</div>
 
-  </small></p>
 </div>
 
+</body>	
 
-<script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
-</script>
-
-</body>

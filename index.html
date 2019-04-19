@@ -14,15 +14,23 @@
       	color: #003333;
     }
     a {
-     	color: #dddddd;
+     	color: #003333;
     }
+    a:hover {
+      color: #000033;
+    }
+
+    a:visited {
+      color: black;
+    }
+
     h1 {
       	font-size: 40px;
       	padding: 0;
     }
 
     h2 {
-    	font-size: 25px;
+    	font-size: 20px;
     }
 
     img {
@@ -47,6 +55,7 @@
     	color: black;
     }
 
+
     @media (max-width: 500px) {
       h1 {
         font-size: 36px;
@@ -69,29 +78,38 @@
 <button type="button" onclick="document.getElementById('me').style.display='block'">Learn more about me</button>
 
 <div id="me" style="display:none">
-	<img src="profile.png" img width = 200px><br>
 	<h2> About Me </h2>
-I am an art historian studying the intersection between painting and new media. Recently, I have been learning some basic coding skills because I want to build websites and other digital tools that people can use. In my spare time, I like to go rockclimbing.<br>
+I am an art historian studying the intersection between painting and new media. I hold an MA and BA in Art History from the University of British Columbia, in Vancouver, Canada. I also write, and my work has been published in <em>The Brooklyn Rail</em>, <em>e-flux</em>, and <em>Canadian Art</em>. Recently, I have been learning some basic coding skills because I want to build digital tools that people can use. In my spare time, I like to go rockclimbing.<br>
 <br>
 
-<div id="contact" style="display:none">
-<h2>Say hi!</h2>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
-  <br>
- <p> I can also be reached at siwin.lo@gmail.com, or at 646.250.5101. </p><br>
+<button type="button" onclick="document.getElementById('writing').style.display='block'">Writing</button>
+
+<div id='writing' style="display:none">
+
+<h2> Writing </h2>
+Rodney Graham at 303 Gallery, Canadian Art <a href="https://canadianart.ca/reviews/rodney-graham/">[online]</a>, March 2019. <br>
+Indicators: Artists on Climate Change at Storm King Art Center, Canadian Art [print], Fall 2018.<br>
+Leandro Erlich: Seeing is Believing at Mori Art Museum, Tokyo, The Brooklyn Rail <a href="https://brooklynrail.org/2018/03/artseen/Leandro-Erlich-Seeing-and-Believing">[online]</a>, March 5, 2018<br>
+Alice Aycock: The Turbulence Series. The Brooklyn Rail <a href=https://brooklynrail.org/2017/11/artseen/Alice-Aycock-The-Turbulence-Series">[online]</a>, November 22, 2017.<br>
+
+"Cleverbot Conversation RSQ00962246." For Machine Use Only: Contemplations on algorithmic epistemology. Edited by Mohammed Salemy. &&& and Gwangju Biennale: New York and Gwangju, 2016.<a href="https://conversations.e-flux.com/t/superconversations-day-28-siwin-lo-responds-to-hu-fang-why-we-look-at-plants-in-a-corrupted-world/1884">Print.</a><br>
+
+“Superconversations Day 28: Siwin Lo responds to Hu Fang, ‘Why We Look at Plants, In a Corrupted World’,” e-flux conversations (June 2015). http://conversations.e-flux.com/t/superconversations-day-28-siwin-lo-responds-to-hu-fang-why-we-look-at-plants-in-a-corrupted-world/1884 <br>
+
+Vikky Alexander: The Temptation of St. Anthony. Catalogue essay. The Apartment Gallery: Vancouver, 2015. Print.<br>
+
+<h2> EDITORIAL </h2>
+Editorial committee. "Issue 11: BLOOD AND EARTH AND SOIL," Shift: Graduate Journal of Visual and Material Culture, 2018. <a href="https://shiftjournal.org/call-for-papers/">Online.</a><br>
+
+Assistant editor. Silvia Federici and Arlen Austin, Wages for Housework: The New York Committee, 1972–1977: History, Theory, Documents. New York: Autonomedia, 2017. <a href="https://www.akpress.org/wages-for-housework.html">Print.</a><br>
+<br>
 </div>
 
-<button type="button" onclick="document.getElementById('contact').style.display='block'">Contact me</button>
-<button type="button" onclick="document.getElementById('rockclimbing').style.display='block'">Woah I want to see a rockclimbing pic!</button> 
-<button type="button" onclick="document.getElementById('me', 'contact', 'rockclimbing').style.display='none'">See less</button> 
+<button type="button" onclick="document.getElementById('me', 'writing', 'rockclimbing').style.display='none'">See less</button> 
 
-<div id="rockclimbing" style="display:none">
-<img src="redrocks.jpg" img width = 400px><br>
-<p>This is a picture of me climbing in Red Rocks Canyon, Nevada!</p>
 
 <br>
-<button type="button" onclick="document.getElementById('rockclimbing').style.display='none'">Okay enough rocks!</button> 
+
 	</div>
 
 </div>

@@ -1,0 +1,77 @@
+body {
+  font-family: futura, courier;
+  padding: 25px;
+}
+
+header {
+  text-align: left;
+  background: white;
+  color: #003333;
+  transition: color 0.2s;
+}
+
+header:hover {
+  color: magenta;
+}
+
+a {
+  color: #003333;
+  transition: color 0.2s;
+}
+a:hover {
+  color: goldenrod;
+}
+
+a:visited {
+  color: black;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 30px 0 15px 0;
+}
+
+img {
+  margin: 25px 25px;
+  border: 2px solid black;
+  width: 200px;
+  border-radius: 100px;
+}
+
+p {
+  padding: 0px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+button {
+  font-size: 18px;
+  font-family: futura;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 15px;
+  color: black;
+  position: right;
+  margin: 30px 0 25px 0;
+  transition: color 0.2s;
+}
+
+button:hover {
+  color: magenta;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}

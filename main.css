@@ -50,10 +50,13 @@ img {
 
 p {
   padding: 0px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
 }
 
+li {
+  font-size: 13px;
+}
 button {
   font-size: 18px;
   font-family: futura;

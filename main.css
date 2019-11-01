@@ -1,6 +1,8 @@
 body {
   font-family: futura, courier;
   padding: 25px;
+  margin: auto;
+  width: 80%;
 }
 
 header {
@@ -18,21 +20,24 @@ a {
   color: #003333;
   transition: color 0.2s;
 }
-a:hover {
-  color: goldenrod;
-}
 
 a:visited {
   color: black;
 }
 
+a:hover {
+  color: goldenrod;
+}
+
 h1 {
-  font-size: 40px;
+  font-size: 3em;
+  font-family: "DM Serif Display", serif;
   padding: 0;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 2em;
+  font-family: "DM Serif Display", serif;
   margin: 30px 0 15px 0;
 }
 
@@ -45,7 +50,7 @@ img {
 
 p {
   padding: 0px;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
 }
 
@@ -63,7 +68,7 @@ button {
 }
 
 button:hover {
-  color: magenta;
+  color: goldenrod;
 }
 
 @media (max-width: 500px) {

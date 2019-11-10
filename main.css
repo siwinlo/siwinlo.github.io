@@ -3,6 +3,8 @@ body {
   padding: 25px;
   margin: auto;
   width: 80%;
+  background-color: #dff3e3;
+  color: #333333;
 }
 
 header {
@@ -22,7 +24,7 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: #333333;
 }
 
 a:hover {
